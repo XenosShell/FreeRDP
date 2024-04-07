@@ -36,7 +36,7 @@ jobs:
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Open Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
-    - name: Сonnect to your RDP CPU 2 Core - 7GB Ram - 256 SSD.
+    - name: Сonnect to your RDP CPU 4 Core - 16GB Ram - 256 SSD.
       run: cmd /c start.bat
     - name: Successfully made!You can close the tab now.
       run: cmd /c loop.bat
